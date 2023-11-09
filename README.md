@@ -5,7 +5,7 @@ Total Time: 5-6 hours
 To-do:
 
 -   Implement backend deletion of files when removed from gallery
--   Write Tests
+-   Write unit tests
 
 To install dependencies
 
