@@ -1,0 +1,43 @@
+{
+    "name": "image-gallery",
+    "version": "1.0.0",
+    "description": "Simple react app to upload and view images",
+    "main": "index.js",
+    "scripts": {
+        "build": "npx tsc",
+        "start-server": "npx tsc && node dist/index.js",
+        "start-client": "cd client; npm start",
+        "start": "concurrently \"npm run start-server\" \"npm run start-client\"",
+        "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "server-dependencies": "npm install",
+        "client-dependencies": "npm install --prefix client",
+        "install-all-deps": "concurrently \"npm run server-dependencies\" \"npm run client-dependencies\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/samerosenberg/image-gallery.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/samerosenberg/image-gallery/issues"
+    },
+    "homepage": "https://github.com/samerosenberg/image-gallery#readme",
+    "dependencies": {
+        "@types/multer": "^1.4.10",
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "multer": "^1.4.5-lts.1"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.16",
+        "@types/express": "^4.17.21",
+        "@types/node": "^20.9.0",
+        "concurrently": "^8.2.2",
+        "nodemon": "^3.0.1",
+        "typescript": "^5.2.2"
+    }
+}

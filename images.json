@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Golden Retriever",
+        "url": "http://localhost:8000/uploads/goldenretriever.jpg"
+    },
+    {
+        "name": "Pug",
+        "url": "http://localhost:8000/uploads/pug.jpeg"
+    },
+    {
+        "name": "Snoop Dogg",
+        "url": "http://localhost:8000/uploads/snoopdogg.jpeg"
+    },
+    {
+        "name": "Corgi",
+        "url": "http://localhost:8000/uploads/corgi.webp"
+    }
+]
